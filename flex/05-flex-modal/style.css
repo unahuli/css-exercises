@@ -20,6 +20,12 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+  /* answer */
+  padding: 15px;
+  gap: 15px;
+  display: flex;
+  /* flex-wrap: wrap; */
 }
 
 .icon {
@@ -33,6 +39,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* answer */
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -46,6 +55,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* answer */
+  flex-shrink: 0;
 }
 
 button {
@@ -57,10 +69,40 @@ button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+
+  /* answer */
+  flex: 0;
 }
 
 button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+
+  /* answer */
+  flex: 0;
+}
+
+/* answer */
+/* 
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+} */
+
+.header {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.header,
+.text {
+  margin-bottom: 15px;
 }
